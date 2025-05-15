@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Renuka P - AI/ML Portfolio</title>
   <style>
-    * {margin: 0; padding: 0; box-sizing: border-box;}
-    html {scroll-behavior: smooth;}
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       font-family: Arial, sans-serif;
       background: #fff;
@@ -25,13 +25,7 @@
       text-align: center;
       padding: 2rem;
     }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
+    header h1 { font-size: 3rem; margin-bottom: 1rem; }
     nav {
       background: #004d40;
       padding: 1rem 0;
@@ -66,6 +60,12 @@
       margin-bottom: 1.5rem;
       color: #00695c;
     }
+    .card {
+      background: #f0f8f8;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 6px;
+    }
     .skills div {
       margin: 0.5rem 0;
       background: #e0e0e0;
@@ -77,12 +77,6 @@
       padding: 0.5rem;
       background: #26a69a;
       color: white;
-    }
-    .card {
-      background: #f0f8f8;
-      padding: 1rem;
-      margin: 1rem 0;
-      border-radius: 6px;
     }
     .timeline {
       border-left: 4px solid #26a69a;
@@ -126,8 +120,8 @@
   <ul>
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#experience">Experience</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#certifications">Certifications</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -146,29 +140,28 @@
   <div><span style="width: 80%;">Research Writing</span></div>
 </section>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="card">
-    <strong>Disease-Free Survival Prediction</strong>
-    <p>Used Naive Bayes to forecast DFS in cervical cancer cases using clinical data.</p>
-  </div>
-  <div class="card">
-    <strong>CKD Stage Detection with AdaBoost</strong>
-    <p>Multi-model classification of CKD stages using SVM, AdaBoost, and Neural Networks.</p>
-  </div>
-  <div class="card">
-    <strong>Gene Recurrence Detection</strong>
-    <p>Used biomedical signals to identify recurrence-linked gene expressions in cancer.</p>
-  </div>
+<section id="publications">
+  <h2>Publications</h2>
+  <div class="card"><strong>Progression of Disease Forecasting in Recurrence Cervical Cancer Using Logistic Regression</strong><br>DOI: <a href="https://doi.org/10.1109/ICECA58529.2023.10395205" target="_blank">10.1109/ICECA58529.2023.10395205</a></div>
+  <div class="card"><strong>Adaboost Machine Learning based Modelling to Predict Chronic Kidney Disease Staging</strong><br>DOI: <a href="https://doi.org/10.1109/ICSTEM61137.2024.10560884" target="_blank">10.1109/ICSTEM61137.2024.10560884</a></div>
+  <div class="card"><strong>Identifying and Categorizing Moringa Oleifera Leaf Disease</strong><br>DOI: <a href="https://doi.org/10.1063/5.0194471" target="_blank">10.1063/5.0194471</a></div>
+  <div class="card"><strong>Diabetes Foot Ulcer Detection Using Inception V3 Deep Learning Technique</strong><br>DOI: <a href="https://doi.org/10.1109/ICACCS60874.2024.10717009" target="_blank">10.1109/ICACCS60874.2024.10717009</a></div>
+  <div class="card"><strong>Disease-Free Survival Prediction in Recurrent Cervical Cancer using Naive Bayes Machine Learning Algorithm</strong><br>DOI: <a href="https://doi.org/10.1109/ICOSEC61587.2024.10722641" target="_blank">10.1109/ICOSEC61587.2024.10722641</a></div>
+  <div class="card"><strong>Detecting Gene Sequence of Recurrence Cervical Cancer Interpolating Biomedical Sensors</strong><br>DOI: <a href="https://doi.org/10.1109/CSITSS64042.2024.10816947" target="_blank">10.1109/CSITSS64042.2024.10816947</a></div>
+  <div class="card"><strong>Feed Forward Neural Network based Prediction of Gene Expression Changes for Immune Responses in Recurrence Cervical Cancer</strong><br>DOI: <a href="https://doi.org/10.1109/ICEARS64219.2025.10940993" target="_blank">10.1109/ICEARS64219.2025.10940993</a></div>
+  <div class="card"><strong>Impact of Hyper Homocysteinemia on Endothelial Dysfunction and Cervical Cancer Recurrence Using Machine Learning Techniques</strong><br>DOI: <a href="https://doi.org/10.1109/ICCES63552.2024.10860207" target="_blank">10.1109/ICCES63552.2024.10860207</a></div>
+  <div class="card"><strong>LSTM - Recurrent Neural Network Model to Forecast the Risk Factors in Recurrent Cervical Carcinoma</strong><br>DOI: <a href="https://doi.org/10.1109/ICSSAS64001.2024.10760386" target="_blank">10.1109/ICSSAS64001.2024.10760386</a></div>
+  <div class="card"><strong>Hyperparameter-Tuned SGD and GB Techniques for Enhanced Accuracy in Mental Health Monitoring</strong><br>DOI: <a href="https://doi.org/10.1109/ICCES63552.2024.10859936" target="_blank">10.1109/ICCES63552.2024.10859936</a></div>
 </section>
 
-<section id="experience">
-  <h2>Certifications & Experience</h2>
+<section id="certifications">
+  <h2>Certifications</h2>
   <div class="timeline">
-    <div><strong>Oracle AI Certified (2023)</strong> - Cloud AI Foundations</div>
-    <div><strong>AICTE FDP: Generative AI - Jan 2025</strong> @ NIT Trichy</div>
-    <div><strong>AICTE FDP: DL & CV in Clinical Research - Feb 2025</strong> @ Thiagarajar College</div>
-    <div><strong>NPTEL: ML & Joy of Computing</strong> - Certified with distinction</div>
+    <div><strong>Oracle Cloud Infrastructure 2023 - AI Certified Foundations Associate</strong></div>
+    <div><strong>AICTE ATAL FDP</strong> – Generative and Ethical AI at NIT Trichy (Jan 2025)</div>
+    <div><strong>AICTE ATAL FDP</strong> – Deep Learning & Computer Vision in Clinical Research at Thiagarajar College (Feb 2025)</div>
+    <div><strong>NPTEL:</strong> Introduction to Machine Learning</div>
+    <div><strong>NPTEL:</strong> The Joy of Computing Using Python</div>
   </div>
 </section>
 
