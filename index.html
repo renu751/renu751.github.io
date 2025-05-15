@@ -3,161 +3,134 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Renuka P - AI/ML Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renuka P | AI/ML Researcher</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
     body {
-      font-family: Arial, sans-serif;
-      background: #fff;
-      color: #333;
+      font-family: 'Poppins', sans-serif;
+      background: url('e5d444a1-03bd-4a88-89d4-410c41ee1d50.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
       line-height: 1.6;
     }
     header {
-      background: linear-gradient(to right, #00695c, #004d40);
-      color: white;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      backdrop-filter: blur(6px);
+      padding: 4rem 2rem;
       text-align: center;
-      padding: 2rem;
+      animation: fadeIn 1.2s ease;
     }
-    header h1 { font-size: 3rem; margin-bottom: 1rem; }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
     nav {
-      background: #004d40;
-      padding: 1rem 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 1rem;
+      text-align: center;
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 1000;
     }
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    nav ul li {
+    nav a {
+      color: #fff;
       margin: 0 1rem;
-    }
-    nav ul li a {
-      color: white;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 500;
+      transition: color 0.3s ease;
     }
-    nav ul li a:hover {
-      text-decoration: underline;
+    nav a:hover {
+      color: #00e0d0;
     }
     section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 4rem 2rem;
+      padding: 3rem 2rem;
+      backdrop-filter: blur(4px);
+      background-color: rgba(0, 0, 0, 0.4);
+      margin: 2rem auto;
+      max-width: 900px;
+      border-radius: 12px;
+      animation: fadeIn 1.5s ease;
     }
     h2 {
       text-align: center;
-      margin-bottom: 1.5rem;
-      color: #00695c;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #00ffc3;
     }
     .card {
-      background: #f0f8f8;
+      background: rgba(255,255,255,0.1);
       padding: 1rem;
+      border-radius: 10px;
       margin: 1rem 0;
-      border-radius: 6px;
     }
-    .skills div {
-      margin: 0.5rem 0;
-      background: #e0e0e0;
-      border-radius: 4px;
-      overflow: hidden;
-    }
-    .skills div span {
+    .skills span {
       display: block;
-      padding: 0.5rem;
-      background: #26a69a;
-      color: white;
-    }
-    .timeline {
-      border-left: 4px solid #26a69a;
-      padding-left: 1rem;
-    }
-    .timeline div {
-      margin-bottom: 1rem;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 0.8rem;
-      margin: 0.5rem 0;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-    }
-    form button {
-      background: #00695c;
-      color: white;
-      border: none;
-      padding: 0.8rem 2rem;
-      cursor: pointer;
-      border-radius: 4px;
+      background: #00e0d0;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      color: #000;
+      font-weight: 500;
+      margin: 0.5rem auto;
+      width: fit-content;
     }
     footer {
-      background: #004d40;
-      color: white;
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background-color: rgba(0,0,0,0.5);
+      color: #ccc;
+    }
+    a.download-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #00ffc3;
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1 style="font-size:2.2rem;">Renuka P</h1>
-  <p>AI/ML Researcher | Healthcare | NLP | Cloud AI</p>
-<a href="#contact" style="background:#00796b;color:white;padding:0.5rem 1rem;border-radius:5px;text-decoration:none;display:inline-block;margin-top:1rem;">🤝 Hire Me as Freelancer</a>
+  <h1>Renuka P</h1>
+  <p>AI/ML Researcher | Healthcare | NLP</p>
 </header>
 
 <nav>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#publications">Publications</a></li>
-    <li><a href="#certifications">Certifications</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#publications">Publications</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#contact">Contact</a>
 </nav>
 
-<div style="text-align:center; margin-top:-2rem;">
-  <a href="RenukaP_Resume.pdf" download style="background:#004d40;color:white;padding:0.8rem 1.5rem;border-radius:5px;text-decoration:none;">📄 Download Resume</a>
-</div>
 <section id="about">
   <h2>About Me</h2>
-  <p>I am an AI/ML researcher with expertise in predictive modeling, NLP, deep learning, and biomedical imaging. With 1.8 years of experience and 10+ IEEE/Scopus publications, I currently work as Project Associate (SERB-CRG) at M.Kumarasamy College of Engineering.</p>
+  <p style="text-align:center;margin-bottom:1rem;font-style:italic;">Available for freelance AI/ML research projects</p>
+  <p>I'm Renuka — a passionate AI/ML Researcher and independent freelancer. I love learning new technologies and applying them in healthcare, biomedical, and NLP domains. With 1.8 years of experience, 10+ IEEE/Scopus publications, and active involvement in SERB-funded research, I continuously explore real-world problems through data and intelligent systems.</p>
 </section>
 
 <section id="skills" class="skills">
-  <h2>Core Skills</h2>
-<div><span style="width: 90%;">Python</span></div>
-<div><span style="width: 85%;">Machine Learning</span></div>
-<div><span style="width: 80%;">Deep Learning</span></div>
-<div><span style="width: 75%;">NLP, OpenAI GPT</span></div>
-<div><span style="width: 80%;">TensorFlow, Scikit-learn</span></div>
-<div><span style="width: 95%;">Machine Learning</span></div>
-<div><span style="width: 90%;">Deep Learning</span></div>
-<div><span style="width: 85%;">Neural Networks</span></div>
-<div><span style="width: 80%;">Natural Language Processing (NLP)</span></div>
-<div><span style="width: 90%;">Python</span></div>
-<div><span style="width: 80%;">Academic Writing</span></div>
-<div><span style="width: 85%;">Research Methodology</span></div>
-<div><span style="width: 75%;">Project Management</span></div>
-<div><span style="width: 75%;">Technical Documentation</span></div>
-<div><span style="width: 80%;">TensorFlow, OpenAI GPT</span></div>
-<div><span style="width: 85%;">Creative and Analytic Thinking</span></div>
-  <div><span style="width: 90%;">Python</span></div>
-  <div><span style="width: 85%;">Machine Learning</span></div>
-  <div><span style="width: 80%;">Deep Learning</span></div>
-  <div><span style="width: 75%;">NLP, OpenAI GPT</span></div>
-  <div><span style="width: 80%;">Research Writing</span></div>
+  <h2>Key Skills</h2>
+  <span>Python</span>
+  <span>Machine Learning</span>
+  <span>Deep Learning</span>
+  <span>NLP</span>
+  <span>Research Writing</span>
 </section>
 
 <section id="publications">
@@ -166,33 +139,16 @@
   <div class="card"><strong>Adaboost Machine Learning based Modelling to Predict Chronic Kidney Disease Staging</strong><br>DOI: <a href="https://doi.org/10.1109/ICSTEM61137.2024.10560884" target="_blank">10.1109/ICSTEM61137.2024.10560884</a></div>
   <div class="card"><strong>Identifying and Categorizing Moringa Oleifera Leaf Disease</strong><br>DOI: <a href="https://doi.org/10.1063/5.0194471" target="_blank">10.1063/5.0194471</a></div>
   <div class="card"><strong>Diabetes Foot Ulcer Detection Using Inception V3 Deep Learning Technique</strong><br>DOI: <a href="https://doi.org/10.1109/ICACCS60874.2024.10717009" target="_blank">10.1109/ICACCS60874.2024.10717009</a></div>
-  <div class="card"><strong>Disease-Free Survival Prediction in Recurrent Cervical Cancer using Naive Bayes Machine Learning Algorithm</strong><br>DOI: <a href="https://doi.org/10.1109/ICOSEC61587.2024.10722641" target="_blank">10.1109/ICOSEC61587.2024.10722641</a></div>
-  <div class="card"><strong>Detecting Gene Sequence of Recurrence Cervical Cancer Interpolating Biomedical Sensors</strong><br>DOI: <a href="https://doi.org/10.1109/CSITSS64042.2024.10816947" target="_blank">10.1109/CSITSS64042.2024.10816947</a></div>
-  <div class="card"><strong>Feed Forward Neural Network based Prediction of Gene Expression Changes for Immune Responses in Recurrence Cervical Cancer</strong><br>DOI: <a href="https://doi.org/10.1109/ICEARS64219.2025.10940993" target="_blank">10.1109/ICEARS64219.2025.10940993</a></div>
-  <div class="card"><strong>Impact of Hyper Homocysteinemia on Endothelial Dysfunction and Cervical Cancer Recurrence Using Machine Learning Techniques</strong><br>DOI: <a href="https://doi.org/10.1109/ICCES63552.2024.10860207" target="_blank">10.1109/ICCES63552.2024.10860207</a></div>
-  <div class="card"><strong>LSTM - Recurrent Neural Network Model to Forecast the Risk Factors in Recurrent Cervical Carcinoma</strong><br>DOI: <a href="https://doi.org/10.1109/ICSSAS64001.2024.10760386" target="_blank">10.1109/ICSSAS64001.2024.10760386</a></div>
-  <div class="card"><strong>Hyperparameter-Tuned SGD and GB Techniques for Enhanced Accuracy in Mental Health Monitoring</strong><br>DOI: <a href="https://doi.org/10.1109/ICCES63552.2024.10859936" target="_blank">10.1109/ICCES63552.2024.10859936</a></div>
 </section>
 
 <section id="certifications">
   <h2>Certifications</h2>
-  <div class="timeline">
-    <div><strong>Oracle Cloud Infrastructure 2023 - AI Certified Foundations Associate</strong></div>
-    <div><strong>AICTE ATAL FDP</strong> – Generative and Ethical AI at NIT Trichy (Jan 2025)</div>
-    <div><strong>AICTE ATAL FDP</strong> – Deep Learning & Computer Vision in Clinical Research at Thiagarajar College (Feb 2025)</div>
-    <div><strong>NPTEL:</strong> Introduction to Machine Learning</div>
-    <div><strong>NPTEL:</strong> The Joy of Computing Using Python</div>
-    <div><strong>IBM Course:</strong> Introduction to the Tools and Techniques of Data Science</div>
-  </div>
-</section>
-
-<section id="tools">
-  <h2>AI Tools & Technologies</h2>
-  <div class="card"><strong>TensorFlow & Keras</strong><br>Deep learning model development for clinical prediction, image classification, and sequence analysis.</div>
-  <div class="card"><strong>OpenAI GPT & Prompt Engineering</strong><br>Used for medical summarization, NLP classification, research synthesis, and chatbot design.</div>
-  <div class="card"><strong>Scikit-learn</strong><br>Core library for ML algorithms such as logistic regression, AdaBoost, SGD, and Naive Bayes.</div>
-  <div class="card"><strong>Python & Pandas</strong><br>Data preprocessing, analysis pipelines, and automation of model evaluations.</div>
-  <div class="card"><strong>Oracle Cloud AI</strong><br>Deployed scalable cloud-based experiments with GPU-accelerated training environments.</div>
+  <div class="card"><strong>Oracle Cloud Infrastructure 2023 - AI Certified Foundations Associate</strong></div>
+  <div class="card"><strong>AICTE ATAL FDP</strong> – Generative and Ethical AI at NIT Trichy (Jan 2025)</div>
+  <div class="card"><strong>AICTE ATAL FDP</strong> – Deep Learning & Computer Vision in Clinical Research at Thiagarajar College (Feb 2025)</div>
+  <div class="card"><strong>NPTEL:</strong> Introduction to Machine Learning</div>
+  <div class="card"><strong>NPTEL:</strong> The Joy of Computing Using Python</div>
+  <div class="card"><strong>IBM Course:</strong> Tools & Techniques of Data Science</div>
 </section>
 
 <section id="contact">
@@ -203,6 +159,7 @@
     <textarea name="message" placeholder="Your Message" required rows="5"></textarea>
     <button type="submit">Send</button>
   </form>
+  <a href="RenukaP_Resume.pdf" download class="download-btn">📄 Download Resume</a>
 </section>
 
 <footer>
