@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Renuka P - AI/ML Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(to right, #2c3e50, #4ca1af);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #34495e;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+      animation: fadein 1s ease-in;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+    .projects, .contact, .about {
+      background: #ecf0f1;
+      border-radius: 8px;
+      padding: 2rem;
+    }
+    footer {
+      text-align: center;
+      background: #2c3e50;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    img.profile {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+    form button {
+      background: #2c3e50;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    form button:hover {
+      background: #1a252f;
+    }
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="profile.jpg" alt="Renuka P" class="profile" />
+  <h1>Renuka P</h1>
+  <p>AI/ML Research Scientist | Healthcare, Agriculture & Impact AI</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#publications">Publications</a>
+  <a href="#resume">Resume</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>I am an AI/ML Research Scientist with 1.8 years of experience designing real-world solutions across healthcare and agriculture. I specialize in deep learning, prompt engineering with LLMs, and deploying AI on Oracle Cloud platforms. I have published over 10 IEEE/Scopus-indexed papers in biomedical imaging, disease risk prediction, and smart agriculture. My goal is to build impactful AI systems that improve lives and support precision diagnostics.</p>
+  <p><strong>Scopus Profile:</strong> <a href="https://www.scopus.com/authid/detail.uri?authorId=57292581400" target="_blank">View on Scopus</a></p>
+</section>
+
+<section id="projects" class="projects">
+  <h2>Selected Projects</h2>
+  <ul>
+    <li><strong>Diabetic Foot Ulcer Detection:</strong> Using InceptionV3 on medical images for early prediction.</li>
+    <li><strong>Mental Health Monitoring:</strong> Built ML models using SGD & Gradient Boosting for psychological tracking.</li>
+    <li><strong>Moringa Leaf Disease Classification:</strong> Lightweight image classification using Naive Bayes.</li>
+  </ul>
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+  <ul>
+    <li>1. Logistic Regression for Cervical Cancer – IEEE ICECA 2023 – DOI: 10.1109/ICECA58529.2023.10395205</li>
+    <li>2. CKD Staging Prediction – IEEE ICSTEM 2024 – DOI: 10.1109/ICSTEM61137.2024.10560884</li>
+    <li>3. Moringa Leaf Classification – AIP – DOI: 10.1063/5.0194471</li>
+    <li>4. Diabetic Foot Ulcer Detection – IEEE ICACCS 2024 – DOI: 10.1109/ICACCS60874.2024.10717009</li>
+    <li>5. Naive Bayes Survival Prediction – IEEE ICOSEC 2024 – DOI: 10.1109/ICOSEC61587.2024.10722641</li>
+    <li>6. Gene Sequence Detection – IEEE CSITSS 2024 – DOI: 10.1109/CSITSS64042.2024.10816947</li>
+    <li>7. FFNN Immune Response in Cancer – IEEE ICEARS 2025 – DOI: 10.1109/ICEARS64219.2025.10940993</li>
+    <li>8. Homocysteinemia Impact Prediction – IEEE ICCES 2024 – DOI: 10.1109/ICCES63552.2024.10860207</li>
+    <li>9. LSTM Risk Forecasting – IEEE ICSSAS 2024 – DOI: 10.1109/ICSSAS64001.2024.10760386</li>
+    <li>10. Mental Health Monitoring – IEEE ICCES 2024 – DOI: 10.1109/ICCES63552.2024.10859936</li>
+  </ul>
+</section>
+
+<section id="resume">
+  <h2>Resume</h2>
+  <p><a href="Renuka_P_Resume.pdf" target="_blank">📄 Download My Resume (PDF)</a></p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <form action="https://formspree.io/f/xknlpqpn" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="_replyto" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Renuka P | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
