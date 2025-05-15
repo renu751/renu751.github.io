@@ -7,21 +7,29 @@
   <title>Renuka P - AI/ML Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background: #f9f9f9;
+      background: #ffffff;
       color: #333;
       scroll-behavior: smooth;
+      animation: fadeIn 1.5s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     header {
-      background: linear-gradient(to right, #2c3e50, #4ca1af);
-      color: white;
+      background: #e0f7fa;
+      color: #004d40;
       padding: 3rem 1rem;
       text-align: center;
     }
     nav {
-      background: #34495e;
+      background: #00695c;
       display: flex;
       justify-content: center;
       padding: 1rem;
@@ -40,33 +48,41 @@
     }
     section {
       padding: 4rem 2rem;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-      animation: fadein 1s ease-in;
     }
     h2 {
-      color: #2c3e50;
+      color: #00695c;
       margin-bottom: 1rem;
     }
-    .projects, .contact, .about {
-      background: #ecf0f1;
+    .box, .contact, .skills, .certifications, .projects, .publications {
+      background: #f0f8f8;
       border-radius: 8px;
       padding: 2rem;
-    }
-    footer {
-      text-align: center;
-      background: #2c3e50;
-      color: white;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    img.profile {
-      width: 150px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+      animation: fadeIn 1.2s ease-in-out;
     }
     ul li {
       margin-bottom: 0.5rem;
+    }
+    .progress-bar {
+      background-color: #e0e0e0;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+    .progress {
+      background-color: #26a69a;
+      height: 20px;
+      line-height: 20px;
+      color: white;
+      text-align: center;
+    }
+    .project-card {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 1rem;
+      margin-bottom: 1rem;
     }
     form input, form textarea {
       width: 100%;
@@ -77,7 +93,7 @@
       font-family: inherit;
     }
     form button {
-      background: #2c3e50;
+      background: #004d40;
       color: white;
       border: none;
       padding: 0.8rem 1.5rem;
@@ -85,76 +101,103 @@
       border-radius: 4px;
     }
     form button:hover {
-      background: #1a252f;
+      background: #00251a;
     }
-    @keyframes fadein {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    footer {
+      text-align: center;
+      background: #004d40;
+      color: white;
+      padding: 1rem;
     }
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-      }
-      nav a {
-        margin: 0.5rem 0;
-      }
+    .btn-collab {
+      display: inline-block;
+      background: #00695c;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+    .btn-collab:hover {
+      background: #004d40;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="profile.jpg" alt="Renuka P" class="profile" />
   <h1>Renuka P</h1>
-  <p>AI/ML Research Scientist | Healthcare, Agriculture & Impact AI</p>
+  <p>AI/ML Research Scientist | Healthcare | Clinical Prediction | Agriculture</p>
+  <a href="#contact" class="btn-collab">🤝 Open to Collaborate</a>
 </header>
 
 <nav>
   <a href="#about">About</a>
+  <a href="#skills">Skills</a>
   <a href="#projects">Projects</a>
+  <a href="#certifications">Certifications</a>
   <a href="#publications">Publications</a>
-  <a href="#resume">Resume</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<section id="about" class="about">
+<section id="about" class="box">
   <h2>About Me</h2>
-  <p>I am an AI/ML Research Scientist with 1.8 years of experience designing real-world solutions across healthcare and agriculture. I specialize in deep learning, prompt engineering with LLMs, and deploying AI on Oracle Cloud platforms. I have published over 10 IEEE/Scopus-indexed papers in biomedical imaging, disease risk prediction, and smart agriculture. My goal is to build impactful AI systems that improve lives and support precision diagnostics.</p>
-  <p><strong>Scopus Profile:</strong> <a href="https://www.scopus.com/authid/detail.uri?authorId=57292581400" target="_blank">View on Scopus</a></p>
+  <p>I am a passionate AI/ML researcher with 1.8 years of experience in predictive modeling, deep learning, biomedical imaging, and cloud AI deployments. I am currently working as a Project Associate (SERB-CRG) at M.Kumarasamy College of Engineering. I have published 10+ research papers in IEEE and Scopus-indexed journals. My work focuses on cervical cancer, gene-based recurrence detection, mental health tracking, and chronic kidney disease.</p>
+  <p><strong>Scopus:</strong> <a href="https://www.scopus.com/authid/detail.uri?authorId=57292581400" target="_blank">View Profile</a></p>
+</section>
+
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+  <div class="progress-bar"><div class="progress" style="width: 90%;">Python - 90%</div></div>
+  <div class="progress-bar"><div class="progress" style="width: 85%;">Machine Learning - 85%</div></div>
+  <div class="progress-bar"><div class="progress" style="width: 80%;">Deep Learning - 80%</div></div>
 </section>
 
 <section id="projects" class="projects">
-  <h2>Selected Projects</h2>
+  <h2>Projects</h2>
+  <div class="project-card">
+    <strong>Disease-Free Survival Prediction in Recurrent Cervical Cancer</strong>
+    <p>Uses Naive Bayes to forecast disease progression-free time for cervical cancer patients.</p>
+  </div>
+  <div class="project-card">
+    <strong>Adaboost-based Chronic Kidney Disease Staging</strong>
+    <p>Compared AdaBoost, SVM, SGD, and Neural Network for CKD stage classification.</p>
+  </div>
+  <div class="project-card">
+    <strong>Gene Sequence Detection for Recurrence in Cervical Cancer</strong>
+    <p>Used biomedical sensor data to detect gene sequences linked to cancer recurrence.</p>
+  </div>
+</section>
+
+<section id="certifications" class="certifications">
+  <h2>Certifications</h2>
   <ul>
-    <li><strong>Diabetic Foot Ulcer Detection:</strong> Using InceptionV3 on medical images for early prediction.</li>
-    <li><strong>Mental Health Monitoring:</strong> Built ML models using SGD & Gradient Boosting for psychological tracking.</li>
-    <li><strong>Moringa Leaf Disease Classification:</strong> Lightweight image classification using Naive Bayes.</li>
+    <li>IBM: Introduction to the Tools and Techniques of Data Science</li>
+    <li>AICTE ATAL: Generative and Ethical AI (NIT Trichy, Jan 2025)</li>
+    <li>AICTE ATAL: Deep Learning & Computer Vision in Clinical Research (Thiagarajar College, Feb 2025)</li>
   </ul>
 </section>
 
-<section id="publications">
+<section id="publications" class="publications">
   <h2>Publications</h2>
   <ul>
-    <li>1. Logistic Regression for Cervical Cancer – IEEE ICECA 2023 – DOI: 10.1109/ICECA58529.2023.10395205</li>
-    <li>2. CKD Staging Prediction – IEEE ICSTEM 2024 – DOI: 10.1109/ICSTEM61137.2024.10560884</li>
-    <li>3. Moringa Leaf Classification – AIP – DOI: 10.1063/5.0194471</li>
-    <li>4. Diabetic Foot Ulcer Detection – IEEE ICACCS 2024 – DOI: 10.1109/ICACCS60874.2024.10717009</li>
-    <li>5. Naive Bayes Survival Prediction – IEEE ICOSEC 2024 – DOI: 10.1109/ICOSEC61587.2024.10722641</li>
-    <li>6. Gene Sequence Detection – IEEE CSITSS 2024 – DOI: 10.1109/CSITSS64042.2024.10816947</li>
-    <li>7. FFNN Immune Response in Cancer – IEEE ICEARS 2025 – DOI: 10.1109/ICEARS64219.2025.10940993</li>
-    <li>8. Homocysteinemia Impact Prediction – IEEE ICCES 2024 – DOI: 10.1109/ICCES63552.2024.10860207</li>
-    <li>9. LSTM Risk Forecasting – IEEE ICSSAS 2024 – DOI: 10.1109/ICSSAS64001.2024.10760386</li>
-    <li>10. Mental Health Monitoring – IEEE ICCES 2024 – DOI: 10.1109/ICCES63552.2024.10859936</li>
+    <li><a href="https://doi.org/10.1109/ICECA58529.2023.10395205" target="_blank">Logistic Regression for Cervical Cancer Forecasting – IEEE ICECA 2023</a></li>
+    <li><a href="https://doi.org/10.1109/ICSTEM61137.2024.10560884" target="_blank">CKD Staging Prediction with AdaBoost – IEEE ICSTEM 2024</a></li>
+    <li><a href="https://doi.org/10.1063/5.0194471" target="_blank">Moringa Leaf Disease Classification – AIP</a></li>
+    <li><a href="https://doi.org/10.1109/ICACCS60874.2024.10717009" target="_blank">Diabetic Foot Ulcer Detection – IEEE ICACCS 2024</a></li>
+    <li><a href="https://doi.org/10.1109/ICOSEC61587.2024.10722641" target="_blank">Naive Bayes Survival Prediction – IEEE ICOSEC 2024</a></li>
+    <li><a href="https://doi.org/10.1109/CSITSS64042.2024.10816947" target="_blank">Gene Sequence Detection – IEEE CSITSS 2024</a></li>
+    <li><a href="https://doi.org/10.1109/ICEARS64219.2025.10940993" target="_blank">FFNN Immune Response in Cancer – IEEE ICEARS 2025</a></li>
+    <li><a href="https://doi.org/10.1109/ICCES63552.2024.10860207" target="_blank">Homocysteinemia Impact Prediction – IEEE ICCES 2024</a></li>
+    <li><a href="https://doi.org/10.1109/ICSSAS64001.2024.10760386" target="_blank">LSTM Risk Forecasting – IEEE ICSSAS 2024</a></li>
+    <li><a href="https://doi.org/10.1109/ICCES63552.2024.10859936" target="_blank">Mental Health Monitoring – IEEE ICCES 2024</a></li>
   </ul>
-</section>
-
-<section id="resume">
-  <h2>Resume</h2>
-  <p><a href="Renuka_P_Resume.pdf" target="_blank">📄 Download My Resume (PDF)</a></p>
 </section>
 
 <section id="contact" class="contact">
   <h2>Contact Me</h2>
+  <p>Email: renu.mpn@gmail.com</p>
+  <p>GitHub: <a href="https://github.com/renu751" target="_blank">renu751</a></p>
   <form action="https://formspree.io/f/xknlpqpn" method="POST">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="_replyto" placeholder="Your Email" required>
